@@ -2,12 +2,12 @@ class Star_Cinema:
     __hall_list = []
 
     @classmethod
-    def entry_hall(cls, hall):
-        cls.__hall_list.append(hall)
+    def entry_hall(self, hall):
+        self.__hall_list.append(hall)
 
     @classmethod
-    def get_hall_list(cls):
-        return cls.__hall_list 
+    def get_hall_list(self):
+        return self.__hall_list 
 
 
 class Hall(Star_Cinema):
@@ -58,8 +58,8 @@ class Hall(Star_Cinema):
         
 hall1 = Hall(10,10,1)
 hall1.entry_show('1001','Tofaan','5.00 PM')
-hall1.entry_show('1002','Poran','&.00 PM')
-hall1.entry_show('1002','Godzila','!0.00 PM')
+hall1.entry_show('1002','Poran','8.00 PM')
+hall1.entry_show('1002','Godzila','10.00 PM')
 
 while True:
     print('\nWelcome to our Cinema. Please Choice: ')
